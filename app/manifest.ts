@@ -1,0 +1,19 @@
+import { Manifest } from 'next/dist/lib/metadata/types/manifest-types';
+
+export default function manifest(): Manifest {
+  return {
+    name: 'QIVO',
+    short_name: 'QIVO',
+    start_url: '/',
+    display: 'standalone',
+    background_color: '#8B0000',
+    theme_color: '#8B0000',
+    icons: [
+      {
+        src: 'icon.png',
+        sizes: '192x192',
+        type: 'image/png',
+      },
+    ],
+  };
+}
